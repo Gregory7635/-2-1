@@ -2,6 +2,7 @@
 #include <fstream>
 using namespace std;
 int main() {
+    setlocale(LC_ALL, "RU");
     ifstream file("a.txt");
     if (!file.is_open()) {
         cout << "Не удалось открыть файл a.txt" << endl;
