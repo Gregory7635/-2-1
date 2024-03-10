@@ -2,9 +2,9 @@
 #include <fstream>
 using namespace std;
 int main() {
-    std::ifstream file("a.txt");
+    ifstream file("a.txt");
     if (!file.is_open()) {
-        std::cout << "Не удалось открыть файл a.txt" << std::endl;
+        cout << "Не удалось открыть файл a.txt" << endl;
         return 1;
     }
 
@@ -21,8 +21,8 @@ int main() {
 
     file.close();
 
-    std::cout << "Количество положительных элементов: " << countPositive << std::endl;
-    std::cout << "Сумма положительных элементов: " << sumPositive << std::endl;
+    cout << "Количество положительных элементов: " << countPositive << endl;
+    cout << "Сумма положительных элементов: " << sumPositive << endl;
 
     return 0;
 }
